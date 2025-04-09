@@ -52,7 +52,7 @@ const Login = () => {
                       </CCol>
                       <CCol xs={6} className="text-right">
                         <CButton color="link" className="px-0">
-                          Forgot password?
+                          Olvidó su contraseña?
                         </CButton>
                       </CCol>
                     </CRow>
@@ -61,15 +61,15 @@ const Login = () => {
               </CCard>
               <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
+                  
                   <div>
-                    <h2>Sign up</h2>
+                    <h2>Registrate Gratis</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua.
+                      ¡Registrate en el nuevo sistema digital de la clinica!
                     </p>
                     <Link to="/register">
                       <CButton color="primary" className="mt-3" active tabIndex={-1}>
-                        Register Now!
+                        ¡Registrate ahora!
                       </CButton>
                     </Link>
                   </div>
