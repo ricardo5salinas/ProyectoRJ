@@ -26,13 +26,13 @@ const Login = () => {
               <CCard className="p-4">
                 <CCardBody>
                   <CForm>
-                    <h1>Login</h1>
-                    <p className="text-body-secondary">Sign In to your account</p>
+                    <h1>Inicio de Sesión</h1>
+                    <p className="text-body-secondary">Inicia sesión con tus datos</p>
                     <CInputGroup className="mb-3">
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
-                      <CFormInput placeholder="Username" autoComplete="username" />
+                      <CFormInput placeholder="Correo" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupText>
@@ -40,14 +40,14 @@ const Login = () => {
                       </CInputGroupText>
                       <CFormInput
                         type="password"
-                        placeholder="Password"
+                        placeholder="Contraseña"
                         autoComplete="current-password"
                       />
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
                         <CButton color="primary" className="px-4">
-                          Login
+                          Iniciar Sesión
                         </CButton>
                       </CCol>
                       <CCol xs={6} className="text-right">
@@ -56,25 +56,16 @@ const Login = () => {
                         </CButton>
                       </CCol>
                     </CRow>
+                    <CCardBody className="text-center">
+                    <p className="text-body-secondary">¿No estas registrado?</p> 
+                        <CButton color="primary" className="mt-0" active tabIndex={-1}>
+                        ¡Registrate aquí!
+                      </CButton>
+                      </CCardBody>
                   </CForm>
                 </CCardBody>
               </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
-                <CCardBody className="text-center">
-                  
-                  <div>
-                    <h2>Registrate Gratis</h2>
-                    <p>
-                      ¡Registrate en el nuevo sistema digital de la clinica!
-                    </p>
-                    <Link to="/register">
-                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
-                        ¡Registrate ahora!
-                      </CButton>
-                    </Link>
-                  </div>
-                </CCardBody>
-              </CCard>
+              
             </CCardGroup>
           </CCol>
         </CRow>
